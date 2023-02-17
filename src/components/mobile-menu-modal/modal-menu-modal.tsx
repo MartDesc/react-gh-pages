@@ -29,13 +29,12 @@ export default function MobileMenuModal() {
             flexDirection: 'column',
             alignItems: 'center'
           }}>
-          <Typography.Paragraph
-            style={{ fontSize: '16px', fontWeight: 'bold' }}>
+          <Typography.Paragraph style={{ fontWeight: 'bold' }}>
             Que souhaitez-vous consulter?
           </Typography.Paragraph>
           <Space style={{ width: '80%' }} size="middle" direction="vertical">
             <Button block>{'Trousse'}</Button>
-            <Button block>{"L'équipe"}</Button>
+            <Button block>{'À propos'}</Button>
             <Button block>{'Ressource'}</Button>
           </Space>
         </div>

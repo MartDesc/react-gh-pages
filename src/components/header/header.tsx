@@ -1,4 +1,4 @@
-import { RadarChartOutlined } from '@ant-design/icons';
+import { BranchesOutlined } from '@ant-design/icons';
 import { Layout, Menu, Space, Typography } from 'antd';
 import useWindowDimensions from '../../hooks/use-window-dimensions.hook';
 import MobileMenuModal from '../mobile-menu-modal/modal-menu-modal';
@@ -14,7 +14,7 @@ export default function Header() {
         key: '1'
       },
       {
-        label: "L'équipe",
+        label: 'À propos',
         key: '2'
       },
       {
@@ -23,7 +23,9 @@ export default function Header() {
       }
     ];
 
-    return <Menu mode="horizontal" items={items} />;
+    return (
+      <Menu style={{ fontSize: '14px' }} mode="horizontal" items={items} />
+    );
   };
 
   const displayMobileMenu = () => <MobileMenuModal />;
@@ -33,10 +35,14 @@ export default function Header() {
 
   return (
     <Layout.Header className="header">
-      <div className="header-content">
+      <div className="header-content max-viewport-width">
         <Space align="center">
-          <RadarChartOutlined
-            style={{ fontSize: '36px', verticalAlign: 'middle' }}
+          <BranchesOutlined
+            style={{
+              fontSize: '30px',
+              verticalAlign: 'middle',
+              color: '#ff7a45'
+            }}
           />
           <Typography.Title style={{ fontSize: '18px', margin: '0' }}>
             Epitrousse
