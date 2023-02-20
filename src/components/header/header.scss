@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  padding-inline: 0;
   z-index: 10;
   background: #ffffff !important;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 3%), 0 1px 6px -1px rgb(0 0 0 / 2%),
@@ -9,5 +10,21 @@
 .header-content {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+}
+
+.header-logo {
+  font-size: 30px;
+  vertical-align: middle;
+  color: #ff7a45;
+}
+
+.header-app-name {
+  font-size: 18px !important;
+  margin: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .padding-page {
+    padding: 0 20px;
+  }
 }

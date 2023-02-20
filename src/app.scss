@@ -13,10 +13,39 @@ body {
 
 .max-viewport-width {
   max-width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ant-collapse-header {
+  align-items: center !important;
+
+  .ant-collapse-header-text {
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .max-viewport-width {
+    width: auto;
+  }
+
+  .margin-page {
+    margin: 0 20px;
+  }
 }

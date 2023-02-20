@@ -1,4 +1,5 @@
 import { Button, Col, Divider, Row, Space, Typography } from 'antd';
+import { Link } from 'react-router-dom';
 import '../../app.scss';
 import HomePictures from '../../components/home-pictures/home-pictures';
 import './home.scss';
@@ -21,7 +22,7 @@ export default function Home() {
           }
         </Typography.Text>
         <Button size="large" type="primary" style={{ marginBottom: '40px' }}>
-          Accéder à la trousse
+          <Link to="/trousse">Accéder à la trousse</Link>
         </Button>
       </Space>
       <Divider
@@ -30,7 +31,7 @@ export default function Home() {
           width: '80%',
           margin: '0 auto 0 auto'
         }}></Divider>
-      <div className="max-viewport-width" style={{ margin: '30px auto' }}>
+      <div className="max-viewport-width messages-container">
         <Row>
           <Col xs={24} sm={11} className="flex-center home-cols">
             <Typography.Text>

@@ -1,7 +1,7 @@
 import { ConfigProvider, Layout } from 'antd';
+import { RouterProvider } from 'react-router-dom';
 import './app.scss';
-import Header from './components/header/header';
-import Home from './pages/home/home';
+import { router } from './router';
 
 export default function App() {
   return (
@@ -13,12 +13,9 @@ export default function App() {
         }
       }}>
       <Layout>
-        <Header />
-        <Layout.Content style={{ backgroundColor: 'white' }}>
-          <Home />
-        </Layout.Content>
+        <RouterProvider router={router} />
         <Layout.Footer></Layout.Footer>
-      </Layout>{' '}
+      </Layout>
     </ConfigProvider>
   );
 }

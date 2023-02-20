@@ -16,6 +16,11 @@
   text-align: center;
 }
 
+.messages-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 992px) {
   .home-description {
     width: 90%;
@@ -25,5 +30,10 @@
 @media only screen and (max-width: 576px) {
   .home-grid-divider {
     display: none;
+  }
+
+  .messages-container {
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }

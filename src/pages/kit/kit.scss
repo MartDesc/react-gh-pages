@@ -1,0 +1,77 @@
+.white-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.box {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.background-img {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.box:hover .background-img,
+.box:focus .background-img {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.box:hover .topic-title,
+.box:focus .topic-title {
+  font-weight: 500;
+}
+
+.background-layer {
+  height: 100%;
+  background-color: rgba(255, 122, 69, 0.7);
+  width: 100%;
+}
+
+.topic-1 {
+  background-image: url('../../assets/img/topic-1.jpg');
+}
+
+.topic-2 {
+  background-image: url('../../assets/img/topic-2.jpg');
+}
+
+.topic-3 {
+  background-image: url('../../assets/img/topic-3.jpg');
+}
+
+.topic-4 {
+  background-image: url('../../assets/img/topic-4.jpg');
+}
+
+.topic-5 {
+  background-image: url('../../assets/img/topic-5.jpg');
+}
+
+.topic-6 {
+  background-image: url('../../assets/img/topic-6.jpg');
+}
+
+.topic-title {
+  width: 80%;
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+}
